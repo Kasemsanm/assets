@@ -1,16 +1,16 @@
-webpackJsonp([14],{
+webpackJsonp([15],{
 
-/***/ 136:
+/***/ 139:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_auth__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__auth_auth__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__auth_auth__ = __webpack_require__(92);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -49,14 +49,66 @@ var TabsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 162:
+/***/ 163:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateevolutionPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the CreateevolutionPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CreateevolutionPage = /** @class */ (function () {
+    function CreateevolutionPage(navCtrl, navParams, service) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.service = service;
+    }
+    CreateevolutionPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CreateevolutionPage');
+    };
+    CreateevolutionPage.prototype.createEvolution = function (temp) {
+        this.service.createEvolution(temp.value["week"], temp.value["detail"]);
+        this.navCtrl.pop();
+    };
+    CreateevolutionPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-createevolution',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\createevolution\createevolution.html"*/'<!--\n  Generated template for the CreateevolutionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>createevolution</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #tempForm="ngForm" (submit)="createEvolution(tempForm)">\n    <ion-list>\n      <ion-list>\n        <ion-item>\n          <ion-label>week</ion-label>\n          <ion-input [(ngModel)]="week" name="week" type="text" required ></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label>detail</ion-label>\n          <ion-input [(ngModel)]="detail" name="detail" type="text" required></ion-input>\n        </ion-item>\n      </ion-list>\n    </ion-list>\n    <div padding-top>\n      <button ion-button block [disabled]="!tempForm.form.valid" type="submit">save</button>\n    </div>\n  </form>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\createevolution\createevolution.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_service_service__["a" /* ServiceProvider */]])
+    ], CreateevolutionPage);
+    return CreateevolutionPage;
+}());
+
+//# sourceMappingURL=createevolution.js.map
+
+/***/ }),
+
+/***/ 164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DevelopmentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createevolution_createevolution__ = __webpack_require__(163);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -114,66 +166,14 @@ var DevelopmentPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 163:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateevolutionPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the CreateevolutionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CreateevolutionPage = /** @class */ (function () {
-    function CreateevolutionPage(navCtrl, navParams, service) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.service = service;
-    }
-    CreateevolutionPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CreateevolutionPage');
-    };
-    CreateevolutionPage.prototype.createEvolution = function (temp) {
-        this.service.createEvolution(temp.value["week"], temp.value["detail"]);
-        this.navCtrl.pop();
-    };
-    CreateevolutionPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-createevolution',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\createevolution\createevolution.html"*/'<!--\n  Generated template for the CreateevolutionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>createevolution</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #tempForm="ngForm" (submit)="createEvolution(tempForm)">\n    <ion-list>\n      <ion-list>\n        <ion-item>\n          <ion-label>week</ion-label>\n          <ion-input [(ngModel)]="week" name="week" type="text" required ></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label>detail</ion-label>\n          <ion-input [(ngModel)]="detail" name="detail" type="text" required></ion-input>\n        </ion-item>\n      </ion-list>\n    </ion-list>\n    <div padding-top>\n      <button ion-button block [disabled]="!tempForm.form.valid" type="submit">save</button>\n    </div>\n  </form>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\createevolution\createevolution.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_service_service__["a" /* ServiceProvider */]])
-    ], CreateevolutionPage);
-    return CreateevolutionPage;
-}());
-
-//# sourceMappingURL=createevolution.js.map
-
-/***/ }),
-
-/***/ 164:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KickingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -223,14 +223,14 @@ var KickingPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NamesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -285,9 +285,19 @@ var NamesPage = /** @class */ (function () {
             });
         }
     };
+    NamesPage.prototype.getNames = function (data) {
+        this.service.getNames({
+            name: data.value['name'],
+            gender: data.value['gender'],
+            day: data.value['day'],
+            mean: data.value['mean']
+        }).subscribe(function (res) {
+            console.log(res);
+        });
+    };
     NamesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-names',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\names\names.html"*/'<!--\n  Generated template for the NamesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>names</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content [ngSwitch]="tab">\n  <div *ngSwitchCase="\'name\'">\n    <div style="position: fixed;top: 30% ; left: 50%;transform: translate(-50%,-50%)">\n      <img src="../../assets/85576-OHFXVE-293.jpg" height="200" width="200"/></div>\n    </div>\n  <ion-fab style="position: fixed;top: 60% ; left: 50%;transform: translate(-50%,-50%)">\n    <button style="width: 150px;height: 150px;font-size: 45px" ion-fab>ค้นหา</button>\n  </ion-fab>\n  <div *ngSwitchCase="\'search\'">\n    <div>\n      <ion-searchbar\n        [showCancelButton]="true"\n      ></ion-searchbar>\n    </div>\n    <ion-fab right bottom>\n      <button ion-fab color="primary"><ion-icon name="ios-funnel"></ion-icon></button>\n    </ion-fab>\n  </div>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\names\names.html"*/,
+            selector: 'page-names',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\names\names.html"*/'<!--\n  Generated template for the NamesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>names</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content [ngSwitch]="tab" padding>\n  <div *ngSwitchCase="\'name\'">\n    <div>\n      <img  style="position: relative;left: 50%;transform: translate(-50%,0)" src="../../assets/85576-OHFXVE-293.jpg" height="200" width="200"/>\n    </div>\n    <div>\n      <h3>ตั้งชื่อลูกรัก</h3>\n    </div>\n    <form #NameForm="ngForm" (submit)="getNames(NameForm)">\n      <ion-list no-lines>\n        <ion-item>\n          <ion-label>ตัวอักษรขึ้นต้น</ion-label>\n          <ion-input block placeholder="ก" placeholder="โปรดพิมตัวอักษรขึ้นต้น" [(ngModel)]="name" name="name" required></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label>เพศ</ion-label>\n          <ion-select [(ngModel)]="gender" name="gender" placeholder="ไม่ได้เลือก" cancelText="ยกเลิก" okText="เลือก"  required>\n            <ion-option value="Male">ชาย</ion-option>\n            <ion-option value="Female">หญิง</ion-option>\n          </ion-select>\n        </ion-item>\n        <ion-item>\n          <ion-label>วันเกิด</ion-label>\n          <ion-select block [(ngModel)]="day" name="day" placeholder="ไม่ได้เลือก" cancelText="ยกเลิก" okText="เลือก"  required>\n            <ion-option value="Mon" selected="true">วันจันทร์</ion-option>\n            <ion-option value="Tue">วันอังตาร</ion-option>\n            <ion-option value="Wed">วันพุธ</ion-option>\n            <ion-option value="Thu">วันพฤหัสบดี</ion-option>\n            <ion-option value="Fri">วันศุกร์</ion-option>\n            <ion-option value="Sat">วันเสาร์</ion-option>\n            <ion-option value="Sun">วันอาทิตย์</ion-option>\n          </ion-select>\n        </ion-item>\n        <ion-item>\n          <ion-label>กลุ่มความหมาย</ion-label>\n          <ion-select block [(ngModel)]="mean" name="mean" placeholder="ไม่ได้เลือก" cancelText="ยกเลิก" okText="เลือก"  required>\n            <ion-option value="1" selected="true">ความดี</ion-option>\n            <ion-option value="2">ความสุข ความรื่นรมย์</ion-option>\n            <ion-option value="3">ความรู้ ความสำเร็จ</ion-option>\n            <ion-option value="4">อำนาจ บารมี</ion-option>\n            <ion-option value="5">เงินทอง</ion-option>\n            <ion-option value="6">ความสวย ความงาม</ion-option>\n          </ion-select>\n        </ion-item>\n      </ion-list>\n      <button ion-button block type="submit" [disabled]="!NameForm.form.valid">ค้นหา</button>\n    </form>\n  </div>\n  <div *ngSwitchCase="\'search\'">\n    <div>\n      <ion-searchbar\n        [showCancelButton]="true"\n      ></ion-searchbar>\n    </div>\n    <ion-fab right bottom>\n      <button ion-fab color="primary">\n        <ion-icon name="ios-funnel"></ion-icon>\n      </button>\n    </ion-fab>\n  </div>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\names\names.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_service_service__["a" /* ServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
     ], NamesPage);
@@ -298,15 +308,15 @@ var NamesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createnotification_createnotification__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createnotification_createnotification__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -378,14 +388,14 @@ var Clock = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 167:
+/***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreatenotificationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -430,16 +440,16 @@ var CreatenotificationPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 168:
+/***/ 169:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TalesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_document_viewer__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_service_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createtales_createtales__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_document_viewer__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_service_service__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createtales_createtales__ = __webpack_require__(170);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -502,14 +512,14 @@ var TalesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 169:
+/***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreatetalesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -554,15 +564,16 @@ var CreatetalesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 170:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createvideo_createvideo__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createvideo_createvideo__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(46);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -576,6 +587,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the VideosPage page.
  *
@@ -583,12 +595,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var VideosPage = /** @class */ (function () {
-    function VideosPage(navCtrl, navParams, service, loadingCtrl) {
+    function VideosPage(navCtrl, navParams, service, loadingCtrl, sanitizer) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.service = service;
         this.loadingCtrl = loadingCtrl;
+        this.sanitizer = sanitizer;
         this.videos = [];
         this.loading = loadingCtrl.create({ content: 'Loading please wait...' });
         service.video().subscribe(function (res) {
@@ -605,9 +618,9 @@ var VideosPage = /** @class */ (function () {
     };
     VideosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-videos',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\videos\videos.html"*/'<!--\n  Generated template for the VideosPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-navbar>\n      <ion-title>Videos</ion-title>\n    </ion-navbar>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="GotoCreate()">\n        <ion-icon name="md-create"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div *ngFor="let item of videos">\n    <ion-card>\n      <div style="position:relative;height:0;padding-bottom:56.25%">\n        <iframe src="https://www.youtube.com/embed/{{item.vid}}?ecver=2"\n                style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0"\n                allow="autoplay; encrypted-media" allowfullscreen></iframe>\n      </div>\n      <ion-card-content>\n        <ion-card-title>\n          {{item.title}}\n        </ion-card-title>\n        <p>\n          {{item.description}}\n        </p>\n      </ion-card-content>\n      <ion-row>\n        <ion-col>\n          <button ion-button icon-start clear small>\n            <ion-icon name="thumbs-up"></ion-icon>\n            <div>{{item.liked}}</div>\n          </button>\n        </ion-col>\n        <ion-col>\n          <button ion-button icon-start clear small>\n            <ion-icon name="text"></ion-icon>\n            <div>{{item.unliked}}</div>\n          </button>\n        </ion-col>\n      </ion-row>\n    </ion-card>\n  </div>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\videos\videos.html"*/,
+            selector: 'page-videos',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\videos\videos.html"*/'<!--\n  Generated template for the VideosPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-navbar>\n      <ion-title>Videos</ion-title>\n    </ion-navbar>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="GotoCreate()">\n        <ion-icon name="md-create"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div *ngFor="let item of videos">\n    <ion-card>\n      <div style="position:relative;height:0;padding-bottom:56.25%">\n        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(\'https://www.youtube.com/embed/\' + item.vid + \'?ecver=2\')"\n                style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0"\n                allow="autoplay; encrypted-media" allowfullscreen></iframe>\n      </div>\n      <ion-card-content>\n        <ion-card-title>\n          {{item.title}}\n        </ion-card-title>\n        <p>\n          {{item.description}}\n        </p>\n      </ion-card-content>\n      <ion-row>\n        <ion-col>\n          <button ion-button icon-start clear small>\n            <ion-icon name="thumbs-up"></ion-icon>\n            <div>{{item.liked}}</div>\n          </button>\n        </ion-col>\n        <ion-col>\n          <button ion-button icon-start clear small>\n            <ion-icon name="text"></ion-icon>\n            <div>{{item.unliked}}</div>\n          </button>\n        </ion-col>\n      </ion-row>\n    </ion-card>\n  </div>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\videos\videos.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_service_service__["a" /* ServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_service_service__["a" /* ServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__["c" /* DomSanitizer */]])
     ], VideosPage);
     return VideosPage;
 }());
@@ -616,14 +629,14 @@ var VideosPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 171:
+/***/ 172:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreatevideoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -667,13 +680,13 @@ var CreatevideoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 172:
+/***/ 173:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(138);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -709,7 +722,7 @@ var ProfilePage = /** @class */ (function () {
     };
     ProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-profile',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\profile\profile.html"*/'<!--\n  Generated template for the ProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Profile</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-card>\n    <ion-row justify-content-center>\n      <ion-avatar margin-vertical>\n        <ion-img class="profile-user-img img-circle" src="{{userData.photoURL}}" [height]="100" [width]="100" [cache]="true"></ion-img>\n      </ion-avatar>\n    </ion-row>\n  </ion-card>\n  <ion-card>\n    <ion-item>\n      <h2 item-left><strong>DisplayName : </strong></h2>\n      <p item-left>{{userData.displayname}}</p>\n    </ion-item>\n    <ion-item>\n      <h2 item-left><strong>Email : </strong></h2>\n      <p item-left>{{userData.email}}</p>\n    </ion-item>\n    <ion-item>\n      <h2 item-left><strong>Tel : </strong></h2>\n      <p item-left>{{userData.phoneNumber}}</p>\n    </ion-item>\n    <ion-item>\n      <h3 item-left><strong>Address : </strong></h3>\n      <p item-left>{{userData.address}}</p>\n    </ion-item>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\profile\profile.html"*/,
+            selector: 'page-profile',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\profile\profile.html"*/'<!--\n  Generated template for the ProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar  transparent>\n    <ion-title>Profile</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="profile">\n    <ion-row justify-content-center>\n      <ion-avatar margin-vertical>\n        <ion-img class="profile-user-img img-circle" src="{{userData.photoURL}}" [height]="200" [width]="200" [cache]="true"></ion-img>\n      </ion-avatar>\n    </ion-row>\n  <ion-row>\n    <ion-item no-lines>\n      <h2 item-left><strong>DisplayName : </strong></h2>\n      <p item-left>{{userData.displayname}}</p>\n    </ion-item>\n    <ion-item no-lines>\n      <h2 item-left><strong>Email : </strong></h2>\n      <p item-left>{{userData.email}}</p>\n    </ion-item>\n    <ion-item no-lines>\n      <h2 item-left><strong>Tel : </strong></h2>\n      <p item-left>{{userData.phoneNumber}}</p>\n    </ion-item>\n    <ion-item no-lines>\n      <h3 item-left><strong>Address : </strong></h3>\n      <p item-left>{{userData.address}}</p>\n    </ion-item>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\profile\profile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
     ], ProfilePage);
@@ -720,13 +733,15 @@ var ProfilePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 173:
+/***/ 174:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortalauthPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_auth__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_signup__ = __webpack_require__(93);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -738,34 +753,42 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 /**
- * Generated class for the SignupPage page.
+ * Generated class for the PortalauthPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var SignupPage = /** @class */ (function () {
-    function SignupPage(navCtrl, navParams) {
+var PortalauthPage = /** @class */ (function () {
+    function PortalauthPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    SignupPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SignupPage');
+    PortalauthPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PortalauthPage');
     };
-    SignupPage = __decorate([
+    PortalauthPage.prototype.signIn = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__auth_auth__["a" /* AuthPage */]);
+    };
+    PortalauthPage.prototype.signUp = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__signup_signup__["a" /* SignupPage */]);
+    };
+    PortalauthPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-signup',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\signup\signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>signup</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #SignUpForm="ngForm" (submit)="SignIn(SignUpForm)">\n    <ion-list>\n\n      <ion-item>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="email" name="email" type="email"\n                   pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"\n                   required #verifyemail="ngModel"></ion-input>\n      </ion-item>\n      <span *ngIf="verifyemail.errors">\n                <span [hidden]="!verifyemail.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Email is required </ion-label>\n                </span>\n                <span [hidden]="!verifyemail.errors.pattern">\n                    <ion-label style="color: red; margin-left: 16px;"> Please enter a valid email </ion-label>\n                </span>\n            </span>\n\n      <ion-item>\n        <ion-label>Password</ion-label>\n        <ion-input [(ngModel)]="password" name="password" type="password" pattern=".{8,}" required\n                   #verifypassword="ngModel"></ion-input>\n      </ion-item>\n\n      <span *ngIf="verifypassword.errors">\n                <span [hidden]="!verifypassword.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Password is required </ion-label>\n                </span>\n                        <span [hidden]="!verifypassword.errors.pattern">\n                    <ion-label\n                      style="color: red; margin-left: 16px;"> Password must be more than 8 characters! </ion-label>\n                </span>\n            </span>\n\n      <ion-item>\n        <ion-label>Re_Password</ion-label>\n        <ion-input [(ngModel)]="Re_Password" name="Re_Password" type="password" pattern=".{8,}" required\n                   #verifyRe_Password="ngModel"></ion-input>\n      </ion-item>\n\n      <span *ngIf="verifyRe_Password.errors">\n                <span [hidden]="!verifyRe_Password.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Password is required </ion-label>\n                </span>\n                        <span [hidden]="!verifyRe_Password.errors.pattern">\n                    <ion-label\n                      style="color: red; margin-left: 16px;"> Password must be more than 8 characters! </ion-label>\n                </span>\n            </span>\n\n    </ion-list>\n    <div padding-top>\n      <button ion-button block [disabled]="!SignUpForm.form.valid" type="submit">SingIn</button>\n    </div>\n  </form>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\signup\signup.html"*/,
+            selector: 'page-portalauth',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\portalauth\portalauth.html"*/'<!--\n  Generated template for the PortalauthPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content padding style=\'background-image:url("assets/imgs/bg/SVG/Artboard 137.svg");background-repeat: no-repeat;background-size: cover;background-position: bottom;\'>\n\n</ion-content>\n<ion-footer padding no-lines>\n  <button ion-button block (click)="signIn()">เข้าสู่ระบบ</button>\n  <button ion-button block (click)="signUp()">สมัครสมาชิก</button>\n</ion-footer>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\portalauth\portalauth.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], SignupPage);
-    return SignupPage;
+    ], PortalauthPage);
+    return PortalauthPage;
 }());
 
-//# sourceMappingURL=signup.js.map
+//# sourceMappingURL=portalauth.js.map
 
 /***/ }),
 
-/***/ 212:
+/***/ 213:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -778,21 +801,22 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 212;
+webpackEmptyAsyncContext.id = 213;
 
 /***/ }),
 
-/***/ 23:
+/***/ 24:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(258);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_storage__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_storage__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(274);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -802,6 +826,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -815,11 +840,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   and Angular DI.
 */
 var ServiceProvider = /** @class */ (function () {
-    function ServiceProvider(fbAuth, db, fbstore, storeage) {
+    function ServiceProvider(fbAuth, db, fbstore, storeage, http) {
         this.fbAuth = fbAuth;
         this.db = db;
         this.fbstore = fbstore;
         this.storeage = storeage;
+        this.http = http;
         console.log('Hello ServiceProvider Provider');
     }
     ServiceProvider.prototype.UpdateUserData = function () {
@@ -909,14 +935,19 @@ var ServiceProvider = /** @class */ (function () {
         return vars;
     };
     ServiceProvider.prototype.createVideo = function (url, title, description) {
-        this.db.database.ref('system/videos').push({
-            title: title,
-            description: description,
-            vid: this.getUrlVars(url)["v"],
-            liked: 0,
-            unliked: 0,
-            timeStamp: new Date()
-        });
+        if (this.getUrlVars(url)["v"]) {
+            this.db.database.ref('system/videos').push({
+                title: title,
+                description: description,
+                vid: this.getUrlVars(url)["v"],
+                liked: 0,
+                unliked: 0,
+                timeStamp: new Date()
+            });
+            return true;
+        }
+        else
+            return false;
     };
     ServiceProvider.prototype.names = function () {
         return this.db.list('system/tales').snapshotChanges().pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["map"])(function (changes) {
@@ -942,75 +973,90 @@ var ServiceProvider = /** @class */ (function () {
             timeStamp: new Date()
         });
     };
+    ServiceProvider.prototype.getNames = function (data) {
+        console.log(data);
+        var headers = new __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["c" /* HttpHeaders */]();
+        headers.append('Access-Control-Allow-Origin', 'https://www.amarinbabyandkids.com');
+        headers.append('origin', 'https://www.amarinbabyandkids.com');
+        headers.append('Access-Control-Allow-Methods', 'POST');
+        headers.append('Accept', 'application/json');
+        headers.append('content-type', 'application/json');
+        return this.http.post("https://www.amarinbabyandkids.com/app/themes/talingchan/refreshTable.php", data);
+    };
     ServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */], __WEBPACK_IMPORTED_MODULE_3__angular_fire_storage__["a" /* AngularFireStorage */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__["a" /* AngularFireAuth */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_fire_storage__["a" /* AngularFireStorage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_fire_storage__["a" /* AngularFireStorage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HttpClient */]) === "function" && _e || Object])
     ], ServiceProvider);
     return ServiceProvider;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=service.js.map
 
 /***/ }),
 
-/***/ 253:
+/***/ 255:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/auth/auth.module": [
-		530,
-		13
+		539,
+		14
 	],
 	"../pages/createevolution/createevolution.module": [
-		531,
-		12
+		538,
+		13
 	],
 	"../pages/createnotification/createnotification.module": [
-		532,
-		11
+		540,
+		12
 	],
 	"../pages/createrecordkicking/createrecordkicking.module": [
-		533,
-		10
+		549,
+		11
 	],
 	"../pages/createtales/createtales.module": [
-		534,
-		9
+		542,
+		10
 	],
 	"../pages/createvideo/createvideo.module": [
-		535,
-		8
+		541,
+		9
 	],
 	"../pages/development/development.module": [
-		536,
-		7
+		543,
+		8
 	],
 	"../pages/kicking/kicking.module": [
-		542,
-		6
+		545,
+		7
 	],
 	"../pages/names/names.module": [
-		543,
-		5
+		544,
+		6
 	],
 	"../pages/notification/notification.module": [
-		537,
+		546,
+		5
+	],
+	"../pages/portalauth/portalauth.module": [
+		548,
 		4
 	],
 	"../pages/profile/profile.module": [
-		538,
+		550,
 		3
 	],
 	"../pages/signup/signup.module": [
-		539,
+		547,
 		2
 	],
 	"../pages/tales/tales.module": [
-		540,
+		551,
 		1
 	],
 	"../pages/videos/videos.module": [
-		541,
+		552,
 		0
 	]
 };
@@ -1025,24 +1071,24 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 253;
+webpackAsyncContext.id = 255;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 257:
+/***/ 275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__development_development__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kicking_kicking__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__names_names__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__notification_notification__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tales_tales__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__videos_videos__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__development_development__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kicking_kicking__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__names_names__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__notification_notification__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tales_tales__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__videos_videos__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1084,25 +1130,24 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\home\home.html"*/'\n\n<ion-content padding style=\'background-image: url("../../assets/imgs/bg/SVG/home.svg") ; background-position: center; background-size: cover\'>\n  <ion-slides>\n    <ion-slide>\n      <div class="row">\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/031-clapperboard.png" (click) = "ChangeRoot(VideosPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>Videos</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/034-ultrasound.png" (click) = "ChangeRoot(DevelopmentPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>Evolution</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/029-exam.png" (click) = "presentAlertCommingSoon()"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>Notification</h5>\n        </div>\n      </div>\n      <div class="row">\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/014-photo-album.png" (click) = "ChangeRoot(TalesPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>Tale Books</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/044-baby.png" (click) = "presentAlertCommingSoon()"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>Create Name</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/042-pregnant.png" (click) = "presentAlertCommingSoon()"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>Kick Record</h5>\n        </div>\n      </div>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\home\home.html"*/'\n\n<ion-content padding style=\'background-image: url("../../assets/imgs/bg/SVG/home.svg") ; background-position: center; background-size: cover\'>\n  <ion-slides>\n    <ion-slide>\n      <div class="row">\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/031-clapperboard.png" (click) = "ChangeRoot(VideosPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>วิดีโอ</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/034-ultrasound.png" (click) = "ChangeRoot(DevelopmentPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>วัฒนาการ</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/029-exam.png" (click) = "ChangeRoot(DevelopmentPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>การแจ้งเตือน</h5>\n        </div>\n      </div>\n      <div class="row">\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/014-photo-album.png" (click) = "ChangeRoot(TalesPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>นิทาน</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/044-baby.png" (click) = "ChangeRoot(NamesPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>ตั้งชื่อลูก</h5>\n        </div>\n        <div class="col">\n          <ion-img src="../../assets/imgs/icons/042-pregnant.png" (click) = "ChangeRoot(KickingPage)"\n                   [height]="85" [width]="85" [cache]="true" style="background: transparent"></ion-img>\n          <!--<ion-badge style="font-size: large;z-index: 99999;position: fixed; margin-left: -20px" color="danger">2</ion-badge>-->\n          <h5>การดิ้น</h5>\n        </div>\n      </div>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], HomePage);
     return HomePage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
 
 /***/ }),
 
-/***/ 316:
+/***/ 319:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreaterecordkickingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1141,13 +1186,13 @@ var CreaterecordkickingPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 317:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(453);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1155,48 +1200,52 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 450:
+/***/ 453:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_videos_videos__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_development_development__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tales_tales__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_notification_notification__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_names_names__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_kicking_kicking__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_profile_profile__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_document_viewer__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_fire__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_fire_database__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_videos_videos__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_development_development__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tales_tales__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_notification_notification__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_names_names__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_kicking_kicking__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_profile_profile__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_document_viewer__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_fire__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_fire_database__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_fire_auth__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_service_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_fire_storage__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__FriebaseConfig__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_service_service__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_fire_storage__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__FriebaseConfig__ = __webpack_require__(537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_forms__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_auth_auth__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_signup_signup__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_auth_auth__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_signup_signup__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_storage__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_createevolution_createevolution__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_createnotification_createnotification__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_createrecordkicking_createrecordkicking__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_createtales_createtales__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_createvideo_createvideo__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_createnotification_createnotification__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_createrecordkicking_createrecordkicking__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_createtales_createtales__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_createvideo_createvideo__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_portalauth_portalauth__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__angular_common_http__ = __webpack_require__(274);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -1250,26 +1299,28 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_27__pages_createnotification_createnotification__["a" /* CreatenotificationPage */],
                 __WEBPACK_IMPORTED_MODULE_28__pages_createrecordkicking_createrecordkicking__["a" /* CreaterecordkickingPage */],
                 __WEBPACK_IMPORTED_MODULE_29__pages_createtales_createtales__["a" /* CreatetalesPage */],
-                __WEBPACK_IMPORTED_MODULE_30__pages_createvideo_createvideo__["a" /* CreatevideoPage */]
+                __WEBPACK_IMPORTED_MODULE_30__pages_createvideo_createvideo__["a" /* CreatevideoPage */],
+                __WEBPACK_IMPORTED_MODULE_31__pages_portalauth_portalauth__["a" /* PortalauthPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/auth/auth.module#AuthPageModule', name: 'AuthPage', segment: 'auth', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/createevolution/createevolution.module#CreateevolutionPageModule', name: 'CreateevolutionPage', segment: 'createevolution', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/auth/auth.module#AuthPageModule', name: 'AuthPage', segment: 'auth', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/createnotification/createnotification.module#CreatenotificationPageModule', name: 'CreatenotificationPage', segment: 'createnotification', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/createrecordkicking/createrecordkicking.module#CreaterecordkickingPageModule', name: 'CreaterecordkickingPage', segment: 'createrecordkicking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/createtales/createtales.module#CreatetalesPageModule', name: 'CreatetalesPage', segment: 'createtales', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/createvideo/createvideo.module#CreatevideoPageModule', name: 'CreatevideoPage', segment: 'createvideo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/createtales/createtales.module#CreatetalesPageModule', name: 'CreatetalesPage', segment: 'createtales', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/development/development.module#DevelopmentPageModule', name: 'DevelopmentPage', segment: 'development', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/notification/notification.module#NotificationPageModule', name: 'NotificationPage', segment: 'notification', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tales/tales.module#TalesPageModule', name: 'TalesPage', segment: 'tales', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/videos/videos.module#VideosPageModule', name: 'VideosPage', segment: 'videos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/names/names.module#NamesPageModule', name: 'NamesPage', segment: 'names', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/kicking/kicking.module#KickingPageModule', name: 'KickingPage', segment: 'kicking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/names/names.module#NamesPageModule', name: 'NamesPage', segment: 'names', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/notification/notification.module#NotificationPageModule', name: 'NotificationPage', segment: 'notification', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/portalauth/portalauth.module#PortalauthPageModule', name: 'PortalauthPage', segment: 'portalauth', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/createrecordkicking/createrecordkicking.module#CreaterecordkickingPageModule', name: 'CreaterecordkickingPage', segment: 'createrecordkicking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tales/tales.module#TalesPageModule', name: 'TalesPage', segment: 'tales', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/videos/videos.module#VideosPageModule', name: 'VideosPage', segment: 'videos', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_16__angular_fire__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_21__FriebaseConfig__["a" /* FirebaseConfig */]),
@@ -1277,7 +1328,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_18__angular_fire_auth__["b" /* AngularFireAuthModule */],
                 __WEBPACK_IMPORTED_MODULE_20__angular_fire_storage__["b" /* AngularFireStorageModule */],
                 __WEBPACK_IMPORTED_MODULE_22__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_25__ionic_storage__["a" /* IonicStorageModule */].forRoot()
+                __WEBPACK_IMPORTED_MODULE_25__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_32__angular_common_http__["b" /* HttpClientModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
@@ -1297,7 +1349,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_27__pages_createnotification_createnotification__["a" /* CreatenotificationPage */],
                 __WEBPACK_IMPORTED_MODULE_28__pages_createrecordkicking_createrecordkicking__["a" /* CreaterecordkickingPage */],
                 __WEBPACK_IMPORTED_MODULE_29__pages_createtales_createtales__["a" /* CreatetalesPage */],
-                __WEBPACK_IMPORTED_MODULE_30__pages_createvideo_createvideo__["a" /* CreatevideoPage */]
+                __WEBPACK_IMPORTED_MODULE_30__pages_createvideo_createvideo__["a" /* CreatevideoPage */],
+                __WEBPACK_IMPORTED_MODULE_31__pages_portalauth_portalauth__["a" /* PortalauthPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1315,19 +1368,19 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 528:
+/***/ 536:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_auth_auth__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_fire_auth__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_service_service__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_portalauth_portalauth__ = __webpack_require__(174);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1385,7 +1438,10 @@ var MyApp = /** @class */ (function () {
         var _this = this;
         this.firebaseAuth = firebaseAuth;
         this.service = service;
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_auth_auth__["a" /* AuthPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_7__pages_portalauth_portalauth__["a" /* PortalauthPage */];
+        platform.windowLoad(function () {
+            splashScreen.show();
+        });
         platform.ready().then(function () { return __awaiter(_this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -1398,7 +1454,7 @@ var MyApp = /** @class */ (function () {
                                 console.log(user);
                                 if (user != null) {
                                     _this.service.UpdateUserData();
-                                    _this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */];
+                                    _this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
                                 }
                             })];
                     case 1:
@@ -1413,7 +1469,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_6__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_7__providers_service_service__["a" /* ServiceProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_6__providers_service_service__["a" /* ServiceProvider */]])
     ], MyApp);
     return MyApp;
 }());
@@ -1422,7 +1478,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 529:
+/***/ 537:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1439,19 +1495,19 @@ var FirebaseConfig = {
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(514);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__signup_signup__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_service_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__signup_signup__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_service_service__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1483,16 +1539,7 @@ var AuthPage = /** @class */ (function () {
         this.error = "";
     }
     AuthPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
         console.log('ionViewDidLoad AuthPage');
-        console.log('verifying Authentication...');
-        this.firebaseAuth.authState.subscribe(function (user) {
-            console.log(user);
-            if (user != null) {
-                _this.service.UpdateUserData();
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__tabs_tabs__["a" /* TabsPage */]);
-            }
-        });
     };
     AuthPage.prototype.SignIn = function (data) {
         var _this = this;
@@ -1535,7 +1582,7 @@ var AuthPage = /** @class */ (function () {
     };
     AuthPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-auth',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\auth\auth.html"*/'<!--\n  Generated template for the AuthPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>auth</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #SingInForm="ngForm" (submit)="SignIn(SingInForm)">\n    <ion-list>\n\n      <ion-item>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="email" name="email" type="email"\n                   pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"\n                   required #verifyemail="ngModel"></ion-input>\n      </ion-item>\n      <span *ngIf="verifyemail.errors">\n                <span [hidden]="!verifyemail.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Email is required </ion-label>\n                </span>\n                <span [hidden]="!verifyemail.errors.pattern">\n                    <ion-label style="color: red; margin-left: 16px;"> Please enter a valid email </ion-label>\n                </span>\n            </span>\n\n      <ion-item>\n        <ion-label>Password</ion-label>\n        <ion-input [(ngModel)]="password" name="password" type="password" pattern=".{8,}" required\n                   #verifypassword="ngModel"></ion-input>\n      </ion-item>\n\n      <span *ngIf="verifypassword.errors">\n                <span [hidden]="!verifypassword.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Password is required </ion-label>\n                </span>\n                        <span [hidden]="!verifypassword.errors.pattern">\n                    <ion-label\n                      style="color: red; margin-left: 16px;"> Password must be more than 8 characters! </ion-label>\n                </span>\n            </span>\n      <span [hidden]="error == null">\n          <ion-label style="color: red; margin-left: 16px;"> {{error}} </ion-label>\n      </span>\n\n    </ion-list>\n    <div padding-top>\n      <button ion-button block [disabled]="!SingInForm.form.valid" type="submit">SingIn</button>\n    </div>\n    <div padding-top>\n      <button ion-button block (click)="SignInWithFacebook()" type="button">SingIn With Facebook</button>\n    </div>\n    <div padding-top>\n      <button ion-button block (click)="SignInWithGoogle()" type="button">SingIn With Google</button>\n    </div>\n    <div padding-top>\n      <button ion-button block (click)="signup()" type="button">Register</button>\n    </div>\n  </form>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\auth\auth.html"*/,
+            selector: 'page-auth',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\auth\auth.html"*/'<!--\n  Generated template for the AuthPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>auth</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #SingInForm="ngForm" (submit)="SignIn(SingInForm)">\n    <ion-list>\n\n      <ion-item>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="email" name="email" type="email"\n                   pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"\n                   required #verifyemail="ngModel"></ion-input>\n      </ion-item>\n      <span *ngIf="verifyemail.errors">\n                <span [hidden]="!verifyemail.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> กรุณาใส่ email</ion-label>\n                </span>\n                <span [hidden]="!verifyemail.errors.pattern">\n                    <ion-label style="color: red; margin-left: 16px;"> กรุณาใส่ email ให้ถูกต้อง </ion-label>\n                </span>\n            </span>\n\n      <ion-item>\n        <ion-label>Password</ion-label>\n        <ion-input [(ngModel)]="password" name="password" type="password" pattern=".{8,}" required\n                   #verifypassword="ngModel"></ion-input>\n      </ion-item>\n\n      <span *ngIf="verifypassword.errors">\n                <span [hidden]="!verifypassword.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> กรุณาใส่ รหัสผ่าน </ion-label>\n                </span>\n                        <span [hidden]="!verifypassword.errors.pattern">\n                    <ion-label\n                      style="color: red; margin-left: 16px;"> ความยาวต้องไม่น้อยกว่า 8 ตัวอักษร </ion-label>\n                </span>\n            </span>\n      <span [hidden]="error == null">\n          <ion-label style="color: red; margin-left: 16px;"> {{error}} </ion-label>\n      </span>\n\n    </ion-list>\n    <div padding-top>\n      <button ion-button block [disabled]="!SingInForm.form.valid" type="submit">เข้าสู่ระบบ</button>\n    </div>\n    <div padding-top>\n      <button ion-button block (click)="SignInWithFacebook()" type="button">เข้าสู่ระบบด้วย Facebook</button>\n    </div>\n    <div padding-top>\n      <button ion-button block (click)="SignInWithGoogle()" type="button">เข้าสู่ระบบด้วย Google</button>\n    </div>\n  </form>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\auth\auth.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_6__providers_service_service__["a" /* ServiceProvider */]])
     ], AuthPage);
@@ -1544,7 +1591,59 @@ var AuthPage = /** @class */ (function () {
 
 //# sourceMappingURL=auth.js.map
 
+/***/ }),
+
+/***/ 93:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(69);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the SignupPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SignupPage = /** @class */ (function () {
+    function SignupPage(navCtrl, navParams, fb) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.fb = fb;
+    }
+    SignupPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SignupPage');
+    };
+    SignupPage.prototype.SignIn = function (data) {
+        this.fb.auth.createUserWithEmailAndPassword(data.value["email"], data.value["password"]).then(function (res) { return console.log(res); });
+    };
+    SignupPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-signup',template:/*ion-inline-start:"D:\JOB\MomMobileApp\src\pages\signup\signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>signup</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #SignUpForm="ngForm" (submit)="SignIn(SignUpForm)">\n    <ion-list>\n\n      <ion-item>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="email" name="email" type="email"\n                   pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"\n                   required #verifyemail="ngModel"></ion-input>\n      </ion-item>\n      <span *ngIf="verifyemail.errors">\n                <span [hidden]="!verifyemail.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Email is required </ion-label>\n                </span>\n                <span [hidden]="!verifyemail.errors.pattern">\n                    <ion-label style="color: red; margin-left: 16px;"> Please enter a valid email </ion-label>\n                </span>\n            </span>\n\n      <ion-item>\n        <ion-label>Password</ion-label>\n        <ion-input [(ngModel)]="password" name="password" type="password" pattern=".{8,}" required\n                   #verifypassword="ngModel"></ion-input>\n      </ion-item>\n\n      <span *ngIf="verifypassword.errors">\n                <span [hidden]="!verifypassword.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Password is required </ion-label>\n                </span>\n                        <span [hidden]="!verifypassword.errors.pattern">\n                    <ion-label\n                      style="color: red; margin-left: 16px;"> Password must be more than 8 characters! </ion-label>\n                </span>\n            </span>\n\n      <ion-item>\n        <ion-label>Re_Password</ion-label>\n        <ion-input [(ngModel)]="Re_Password" name="Re_Password" type="password" pattern=".{8,}" required\n                   #verifyRe_Password="ngModel"></ion-input>\n      </ion-item>\n\n      <span *ngIf="verifyRe_Password.errors">\n                <span [hidden]="!verifyRe_Password.errors.required">\n                    <ion-label style="color: red; margin-left: 16px;"> Password is required </ion-label>\n                </span>\n                        <span [hidden]="!verifyRe_Password.errors.pattern">\n                    <ion-label\n                      style="color: red; margin-left: 16px;"> Password must be more than 8 characters! </ion-label>\n                </span>\n            </span>\n\n    </ion-list>\n    <div padding-top>\n      <button ion-button block [disabled]="!SignUpForm.form.valid" type="submit">SingIn</button>\n    </div>\n  </form>\n</ion-content>\n'/*ion-inline-end:"D:\JOB\MomMobileApp\src\pages\signup\signup.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */]) === "function" && _c || Object])
+    ], SignupPage);
+    return SignupPage;
+    var _a, _b, _c;
+}());
+
+//# sourceMappingURL=signup.js.map
+
 /***/ })
 
-},[317]);
+},[320]);
 //# sourceMappingURL=main.js.map
